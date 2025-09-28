@@ -1,19 +1,18 @@
 import { sentryVitePlugin } from "@sentry/vite-plugin";
-import { defineConfig } from 'vite'
-import react from '@vitejs/plugin-react'
+import { defineConfig } from 'vite';
+import react from '@vitejs/plugin-react';
 
 // https://vite.dev/config/
 export default defineConfig({
-  plugins: [react(), sentryVitePlugin({
-    base: '/apple_website/', 
-    org: "jsm-d7q",
-    project: "javascript-react"
-  }), sentryVitePlugin({
-    org: "jsm-d7q",
-    project: "javascript-react"
-  })],
-
+  plugins: [
+    react(),
+    sentryVitePlugin({
+      org: "jsm-d7q",
+      project: "javascript-react",
+    }),
+  ],
+  base: '/apple_website/',   
   build: {
-    sourcemap: true
-  }
-})
+    sourcemap: true,
+  },
+});
