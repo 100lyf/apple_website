@@ -10,10 +10,10 @@ import * as THREE from 'three';
 import React, { useEffect, useRef } from 'react'
 import { useGLTF, useTexture } from '@react-three/drei'
 
-export function Model(props) {
-  const modelPath = `${import.meta.env.BASE_URL}models/scene.glb`;
+const modelPath = `${import.meta.env.BASE_URL}models/scene.glb`;
 
-  const { nodes, materials } = useGLTF(modelPath);
+export function Model(props) {
+   const { nodes, materials } = useGLTF(modelPath);
 
 
 
