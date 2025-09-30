@@ -10,8 +10,7 @@ export default defineConfig({
       org: "jsm-d7q",
       project: "javascript-react",
     }),
-  ],
-  base: '/apple_website/',   
+  ],  
   build: {
     sourcemap: true,
   },
