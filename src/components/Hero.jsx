@@ -40,6 +40,7 @@ const Hero = () => {
       muted 
       playsInline={true}
       loop
+      controls={false} 
       poster= {smallImg}
 
       key= {videoSrc}>

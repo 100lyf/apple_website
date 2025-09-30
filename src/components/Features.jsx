@@ -52,7 +52,7 @@ const Features = () => {
             flex items-center">
                 <video playsInline id="exploreVideo"
                 className="w-full h-full object-cover object-center"
-                preload="none" muted autoPlay loop ref={videoRef}>
+                preload="none" muted autoPlay controls={false} loop ref={videoRef}>
                     <source src={exploreVideo} type="video/mp4"/>
                 </video>
             </div>
